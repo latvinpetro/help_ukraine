@@ -93,6 +93,7 @@ func main() {
 				"-d",
 				"--rm",
 				"--network=host",
+				"--restart=always",
 				"alexmon1989/dripper:latest",
 				"-t 150",
 				"-l 2048",
@@ -103,6 +104,18 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
+
+			//fmt.Println("docker",
+			//	"run",
+			//	"-d",
+			//	"--rm",
+			//	"--network=host",
+			//	"alexmon1989/dripper:latest",
+			//	"-t 150",
+			//	"-l 2048",
+			//	port,
+			//	host,
+			//)
 
 			fmt.Println(fmt.Sprintf("%s", out))
 		}
