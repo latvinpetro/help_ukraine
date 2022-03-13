@@ -1,3 +1,3 @@
 Hello and thanks that helps Ukraine
 
-/bin/sh https://github.com/latvinpetro/help_ukraine.git/init.sh
+wget -O - https://raw.githubusercontent.com/latvinpetro/help_ukraine/main/init.sh | /bin/bash
